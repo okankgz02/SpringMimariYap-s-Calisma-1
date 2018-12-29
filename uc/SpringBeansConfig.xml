@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<!-- <bean id="yakit1" class="com.okan.Elektrik"></bean>
+	<bean id="yakit2" class="com.okan.B"></bean> -->
+	<bean id="yakit3" class="com.okan.Mazot"></bean>
+
+	<bean id="araba" class="com.okan.Araba">  
+	<constructor-arg ref="yakit">
+	</constructor-arg>
+	</bean>
+</beans>
